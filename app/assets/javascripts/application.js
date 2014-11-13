@@ -18,6 +18,7 @@
 //= require ember-data
 //= require_self
 //= require ./app
+//= require bootstrap.min
 
 // for more details see: http://emberjs.com/guides/application/
 App = Ember.Application.create({
