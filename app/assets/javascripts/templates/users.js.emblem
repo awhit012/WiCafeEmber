@@ -2,4 +2,7 @@ article#leads
   h1 Users
   ul
     each user in controller
-      li= user.fullName
+      link-to 'user' user tagName="li"
+        user.fullName
+
+outlet

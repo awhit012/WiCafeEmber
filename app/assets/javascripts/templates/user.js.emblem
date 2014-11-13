@@ -1,0 +1,14 @@
+article#user
+  h1= model.fullName
+
+  p
+    ' Name:
+    model.fullName
+
+  p
+    ' Email:
+    model.email
+
+  p
+    ' About Me:
+    model.about_me
