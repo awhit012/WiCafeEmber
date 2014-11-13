@@ -1,2 +1,10 @@
-h1 Hello World
-outlet
+header
+  .navbar
+    .navbar-default
+      h1
+        a href="#" WiCafe
+
+section#main
+  = outlet
+
+footer

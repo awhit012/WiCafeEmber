@@ -1,0 +1,5 @@
+article#leads
+  h1 Users
+  ul
+    each user in controller
+      li= user.firstName

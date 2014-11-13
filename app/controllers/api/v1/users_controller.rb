@@ -14,7 +14,8 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def update
-    respond_with user.update(user_params)
+    user.update(user_params)
+    respond_with user
   end
 
   def destroy
@@ -24,7 +25,7 @@ class Api::V1::UsersController < ApplicationController
   private
 
   def user
-    User.find(params[:id])
+    @user ||= User.find(params[:id])
   end
 
   def user_params
@@ -35,4 +36,5 @@ class Api::V1::UsersController < ApplicationController
       :rating,
       :about_me)
   end
+
 end
